@@ -45,8 +45,7 @@ class MainWindow23Ext(Ui_MainWindow):
             self.lineEditThanhTien.setText(f"{money}")
     def xuly_thongke(self):
         total_money=self.so_khach_hang*self.soluong_mua_khachhang*20000
-        total_money_sv=self.so_khach_hang_sv*\
-                        self.soluong_mua_khachhang_sv*20000*0.95
+        total_money_sv=self.so_khach_hang_sv*self.soluong_mua_khachhang_sv*20000*0.95
         self.lineEditTongKH.setText(f"{self.so_khach_hang}")
         self.lineEditTongKHlaSV.setText(f"{self.so_khach_hang_sv}")
-        self.lineEditTongDoanhThu.settext(f"{total_money+total_money_sv}")
+        self.lineEditTongDoanhThu.setText(f"{total_money+total_money_sv}")

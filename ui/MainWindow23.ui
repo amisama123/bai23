@@ -29,7 +29,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 181);</string>
+     <string notr="true">background-color: rgb(255, 255, 181);
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="title">
      <string>Thông tin nhập:</string>
@@ -142,7 +143,7 @@
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../images/ic_new.webp</normaloff>../images/ic_new.webp</iconset>
+       <normaloff>../../../../../../../.designer/images/ic_new.webp</normaloff>../../../../../../../.designer/images/ic_new.webp</iconset>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonTinh">
@@ -162,7 +163,7 @@
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../images/ic_cal.png</normaloff>../images/ic_cal.png</iconset>
+       <normaloff>../../../../../../../.designer/images/ic_cal.png</normaloff>../../../../../../../.designer/images/ic_cal.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -188,7 +189,7 @@
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../images/ic_statistic.png</normaloff>../images/ic_statistic.png</iconset>
+       <normaloff>../../../../../../../.designer/images/ic_statistic.png</normaloff>../../../../../../../.designer/images/ic_statistic.png</iconset>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonThoat">
@@ -208,7 +209,7 @@
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../images/shutdown.webp</normaloff>../images/shutdown.webp</iconset>
+       <normaloff>../../../../../../../.designer/images/shutdown.webp</normaloff>../../../../../../../.designer/images/shutdown.webp</iconset>
      </property>
     </widget>
    </widget>
@@ -227,7 +228,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(211, 255, 255);</string>
+     <string notr="true">background-color: rgb(211, 255, 255);
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="title">
      <string>Thông tin thống kê:</string>
@@ -325,5 +327,22 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButtonThoat</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>437</x>
+     <y>193</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
